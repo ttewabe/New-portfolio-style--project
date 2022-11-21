@@ -82,6 +82,15 @@ p.danger {
 	color: red;
 }
 /************ Navbar Css ************/
+.logo-1 {
+	width: 100%;
+	z-index: 1;
+	transition: 0.3s ease-in-out;
+}
+.logo-1:hover{
+	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+
+}
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -102,7 +111,8 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   color: #fff !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
-  font-size: 18px;
+  font-size:20px;
+  font-weight: 700;
   opacity: 0.75;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
@@ -118,8 +128,8 @@ span.navbar-text {
     margin-left: 14px;
 }
 .social-icon a {
-    width: 42px;
-    height: 42px;
+    width: 32px;
+    height: 32px;
     background: rgba(217, 217, 217, 0.1);
     display: inline-flex;
     border-radius: 50%;
@@ -131,8 +141,8 @@ span.navbar-text {
 }
 .social-icon a::before {
     content: "";
-    width: 42px;
-    height: 42px;
+    width: 32px;
+    height: 32px;
     position: absolute;
     background-color: #ffffff;
     border-radius: 50%;
@@ -143,7 +153,7 @@ span.navbar-text {
     transform: scale(1);
 }
 .social-icon a img {
-	width: 40%;
+	width: 50%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
@@ -615,4 +625,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+.footer-one{
+  margin-top: 0px;
 }
