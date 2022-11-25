@@ -12,13 +12,13 @@ export const Slider = () =>  {
     const slideLength =sliderData.length;
     const autoScroll = true;
     let slideInterval;
-    let intervalTime =8000;
+    let intervalTime =10000;
     const nextSlide =() => {
         setCurrentSlide(currentSlide === slideLength -1 ? 0: currentSlide + 1)
     };
 
     function auto() {
-        slideInterval =setInterval(nextSlide, intervalTime)
+        slideInterval =setInterval(nextSlide, intervalTime )
     }
     useEffect(() => {
         setCurrentSlide(0)
