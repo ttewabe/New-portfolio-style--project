@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-import { SliderData} from "./SliderData";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { sliderData} from '../shared/sliderData';
 
 
 export const Slider = () =>  {
@@ -11,7 +9,7 @@ export const Slider = () =>  {
     const [show1,setShow1] = useState(false);
     const [date,setDate] = useState(new Date());
 
-    const slideLength =SliderData.length;
+    const slideLength =sliderData.length;
     const autoScroll = true;
     let slideInterval;
     let intervalTime =8000;
@@ -42,13 +40,18 @@ export const Slider = () =>  {
     });
 
         return (
+            <section >
+            <Container>
+            <Row>
+            <h1>OUR SERVICE</h1></Row>
+            <Row>
             <div className="slider">
-                {SliderData.map((slide, index) =>{
+                {sliderData.map((slide, index) =>{
                     return(
                         <div className={index === currentSlide ? "slide current": "slide"} key = {index}>
                             {index === currentSlide && (
                                 <>
-                                    <img src={slide.image} alt="slide"/>
+                                    <img className="content1" src={slide.image} alt="slide"/>
                                     <div className="content">
                                         <h3>{slide.heading}</h3>
                                         <p>{slide.desc}</p> <hr/>
@@ -62,6 +65,9 @@ export const Slider = () =>  {
                         </div>
                     )
                 })}
-            </div>
+                </div>
+                </Row>
+                </Container>
+            </section>
         )
 }

@@ -1,7 +1,7 @@
 
 export const SliderData = [
     {
-      image:"../assets/img/project-img1.png",
+      image:"../../assets/img/project-img1.png",
       heading: "Slide One",
       desc: "This is the description of slide one Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quos quas, voluptatum nesciunt illum exercitationem.",
     },
