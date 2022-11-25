@@ -12,7 +12,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const [show,setShow] = useState(false);
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+  const toRotate = ["Software Developer", "Web Designer", "UI/UX Designer"];
   const period = 2000;
 
   useEffect(() => {
@@ -56,11 +56,10 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : " "}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Tewabe`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Tewabe`} </h1><br></br> <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span>
                   <p>I'm passionate about bringing both the technical and visual aspects of digital products to life.User experience with strong organization, time management & communication skills. I'm able to work independently & collaboratively with a meticulous attention to detail.</p>
                   {show?<p>I have a MSc Degree in Engineering, and Full Stack Website and Mobile App Developer.I'm happiest when I'm creating, learning, exploring and thinking about how to make things better.</p>:null}
-                  <button onClick={()=> setShow(!show)}>Read More <ArrowRightCircle size={25} /></button>
+                  <button className="readmore" onClick={()=> setShow(!show)}>Read More <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>

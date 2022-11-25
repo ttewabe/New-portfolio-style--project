@@ -45,49 +45,9 @@ const projects = [
 ];
 
 return (
-<section className="project" id="project">
+<section className="project1" id="project">
     <Container>
-    <Row>
-        
-        
-                        <div className='col-md-5  image-container-t'>
-                            <img src={tour} style={{maxWidth: '1000px', width: '100%', height:'100%'}}  alt="logo"/>
-                        </div>
-                        <div className='col-md-5 card-content-t'>
-                            <div className='card-title-tt'>
-                                <h2>Ethio Tour</h2>
-                            </div>
-                            <div className='card-title-t'>
-                                <h4>This is a published Tour Guid Website. If you want to travel to Ethiopia and needed my website to help you navigate the best place. The tool I used for this project, HTML, CSS ,JAVA, Bootstrap.</h4>
-                            </div>
-                        </div>
-                        <div className='col-md-2 btn-t'>
-                            <button>
-                                <a href="https://tour.ttadege.com" target="_blank">
-                                Website
-                                </a>
-                            </button>
-                        </div>
-                    
-                        <div className='col-md-5 image-container-t'>
-                                <img src={taxFilling}  alt=""/>
-                        </div>
-                        <div className='col-md-5 card-content-t'>
-                            <div className='card-title-tt'>
-                                <h2>Time Tax</h2>
-                            </div>
-                            <div className='card-title-t'>
-                                <h4>In this digital era, having an online presence is not just an advantage it’s an absolute necessity.My website as the mirror of my service such as Tax filing, Auditing and other accounting service. The tool I used for this project, HTML, CSS ,JAVA SCRIPT, REACT, and REDUX.</h4>
-                            </div>
-                        </div>
-                        <div className='btn-t col-md-2'>
-                            <button>
-                                <a href="https://www.mb.ttadege.com" target="_blank">
-                                Website
-                                </a>
-                            </button>
-                        </div>
-                    </Row>
+  
             <Row>
         <Col size={12}>
         <TrackVisibility>
