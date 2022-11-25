@@ -629,3 +629,80 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer-one{
   margin-top: 0px;
 }
+
+/* Slide CSS*/
+.slider{
+  width: 100%;
+  height: 82vh;
+  position: relative;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+}
+@media screen and (min-width:600px){
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+}
+.content {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  font-size: 55px;
+  font-weight: bold;
+  opacity: 0;
+  width: 50%;
+  height: 100%;
+  padding: 3rem 3rem;
+  background: rgba(172, 247, 97, 0.5);
+  animation: slide-up 0.5s ease 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes slide-up{
+0%{
+  visibility: visible;
+  top: 17rem;
+}
+}
+@media screen and (max-width: 400px){
+.content {
+  width: 100%;
+}
+}
+.content > * {
+  color:rgb(27, 27, 27);
+  margin-bottom: 1rem;
+}
+.current{
+  opacity: 1;
+  transform: translateX(0);
+}
+.current .content{
+  opacity:1 ;
+}
+.btn-primary{
+  margin: 1px 10px;
+  border-radius: 10px;
+  background-color: rgb(116, 180, 39);
+  border: rgb(116, 180, 39);
+  padding: 1px;
+  font-weight: bold;
+  font-size: 26px;
+  color: #ffffff;
+}
+.btn-primary1{
+  margin: 1px 10px;
+  padding: 1px;
+  font-weight: bold;
+  font-size: 26px;
+  color: rgb(97, 102, 93);
+}
