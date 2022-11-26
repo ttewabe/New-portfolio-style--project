@@ -40,11 +40,11 @@ export const Slider = () =>  {
     });
 
     return (
-        <section >
+        <section className="slider" id="slider" >
             <Container className="project2">
                 <h1 className="project1">PROJECTS</h1>
                 <Row>
-                    <div className="slider">
+                    <div className="slider1">
                         {sliderData.map((slide, index) =>{
                         return(
                             <div className={index === currentSlide ? "slide current": "slide"} key = {index}>
