@@ -362,6 +362,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
+.skill-1 img{
+  width: auto;
+  height: 150px;
+}
 
 /************ Projects Css ************/
 .project {

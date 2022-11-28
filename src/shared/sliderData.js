@@ -1,6 +1,6 @@
 export const sliderData = [
     {
-      image: "/assets/images/umberella.jpeg",
+      image: "/assets/images/tour1.jpeg",
       heading: "TOUR_GUID",
       desc: "Employe Retention credit ERC.",
     },
@@ -10,7 +10,7 @@ export const sliderData = [
       desc: "Extension of Time To File Your .... Tax",
     },
     {
-      image: "/assets/images/valuation.jpeg",
+      image: "/assets/images/teff-pro1.png",
       heading: "E-SHOP",
       desc:  "Helping you organize your ...... finances",
     },
