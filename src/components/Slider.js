@@ -7,6 +7,7 @@ export const Slider = () =>  {
     const [ currentSlide, setCurrentSlide] = useState(0);
     const [show,setShow] = useState(false);
     const [show1,setShow1] = useState(false);
+    const [show2,setShow2] = useState(false);
     const [date,setDate] = useState(new Date());
 
     const slideLength =sliderData.length;
@@ -56,8 +57,10 @@ export const Slider = () =>  {
                                             <p>{slide.desc}</p> <hr/>
                                                 {show?<h3 className="btn-primary1">The IRS encourages everyone to have all the information they need in hand ... More than 160 million individual tax returns for the 2021 tax ...</h3>:null}
                                                 {show1?<h3 className="btn-primary1"> Time : {date.toLocaleTimeString()} <br/> Date : {date.toLocaleDateString()}</h3>: null}
-                                            <button size="lg" className="--btn btn-primary" onClick={()=> setShow(!show)}>GET MORE</button>
-                                            <button size="lg" className="--btn btn-primary" onClick={()=> setShow1(!show1)}>Date & Time</button>
+                                            <button size="lg" className="--btn btn-primary" onClick={()=> setShow(!show)}>Tour Guid</button>
+                                            <button size="lg" className="--btn btn-primary" onClick={()=> setShow(!show)}>Time Tax</button>
+                                            <button size="lg" className="--btn btn-primary" onClick={()=> setShow(!show)}>Coffee Affection</button>
+                                            {/*<button size="lg" className="--btn btn-primary" onClick={()=> setShow1(!show1)}>Date & Time</button>*/}
                                         </div>  
                                     </>
                                 )}
