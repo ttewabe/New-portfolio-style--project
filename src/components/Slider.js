@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { sliderData} from '../shared/sliderData';
+import { ArrowRightCircle } from 'react-bootstrap-icons';
 
 
 export const Slider = () =>  {
@@ -55,11 +56,10 @@ export const Slider = () =>  {
                                         <div className="content">
                                             <h3>{slide.heading}</h3>
                                             <p>{slide.desc}</p> <hr/>
-                                                {show?<h3 className="btn-primary1">The IRS encourages everyone to have all the information they need in hand ... More than 160 million individual tax returns for the 2021 tax ...</h3>:null}
-                                                {show1?<h3 className="btn-primary1"> Time : {date.toLocaleTimeString()} <br/> Date : {date.toLocaleDateString()}</h3>: null}
-                                            <button size="lg" className="--btn btn-primary" onClick={()=> setShow(!show)}>Tour Guid</button>
-                                            <button size="lg" className="--btn btn-primary" onClick={()=> setShow(!show)}>Time Tax</button>
-                                            <button size="lg" className="--btn btn-primary" onClick={()=> setShow(!show)}>Coffee Affection</button>
+                                            <button className="readmore" onClick={()=> setShow(!show)}>WEBSITES <ArrowRightCircle size={25} className="arrow" /></button>
+                                            <button size="lg" className="--btn btn-primary" onClick={()=> setShow(!show)}><a href="https://tour.ttadege.com" target="_blank">Tour Guid</a></button>
+                                            <button size="lg" className="--btn btn-primary" onClick={()=> setShow(!show)}><a href="https://www.mb.ttadege.com" target="_blank">Time Tax</a></button>
+                                            <button size="lg" className="--btn btn-primary" onClick={()=> setShow(!show)}><a href="https://teff.ttadege.com" target="_blank">Coffee Affection</a></button>
                                             {/*<button size="lg" className="--btn btn-primary" onClick={()=> setShow1(!show1)}>Date & Time</button>*/}
                                         </div>  
                                     </>

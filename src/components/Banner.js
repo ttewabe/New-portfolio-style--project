@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import { ArrowUpCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -59,7 +59,7 @@ export const Banner = () => {
                   <h1>{`Hi! I'm Tewabe`} </h1><br></br> <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Developer", "Web Designer", "UI/UX Designer","Assist in our communities"]'><span className="wrap">{text}</span></span>
                     <p>I'm passionate about bringing both the technical and visual aspects of digital products to life.User experience with strong organization, time management & communication skills. I'm able to develope small business website, business-card,event-card. Support/assist from service seekers, including N-400, N-600 & I-130 forms,DV form, tax-filing and others. </p>
                     {show?<p>I have a MSc Degree in Engineering, and Full Stack Website and Mobile App Developer.I'm happiest when I'm creating, learning, exploring and thinking about how to make things better.</p>:null}
-                    <button className="readmore" onClick={()=> setShow(!show)}>Read More <ArrowRightCircle size={25} /></button>
+                    <button className="readmore" onClick={()=> setShow(!show)}>Read More <ArrowUpCircle size={25} className="arrow" /></button>
                 </div>}
               </TrackVisibility>
             </Col>

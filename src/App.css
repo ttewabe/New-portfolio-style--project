@@ -279,6 +279,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: center;
   align-items: center;
   margin-bottom: 2px;
+  color: #368baa;;
+}
+.banner .arrow{
+  background: linear-gradient(90.21deg, rgba(64, 156, 213, 0.5) -5.91%, rgba(195, 186, 237, 0.5) 111.58%);
+  border-radius: 50%;
+  color: #368baa;
 }
 .banner p {
   color: #B8B8B8;
@@ -633,6 +639,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
 }
 }
+
+button a {
+	text-decoration: none; 
+	color: inherit; 
+}
+button a:hover{
+  text-decoration: none; 
+	color: white; 
+}
 .content1{
   position: absolute;
   top: 1;
@@ -667,7 +682,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 }
 .content > * {
-  color:rgb(27, 27, 27);
+  color:rgb(255, 255, 255);
   margin-bottom: 1rem;
 }
 .current{
@@ -679,13 +694,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .btn-primary{
   margin: 1px 10px;
-  border-radius: 10px;
-  background-color: rgb(116, 180, 39);
-  border: rgb(116, 180, 39);
   padding: 1px;
   font-weight: bold;
   font-size: 18px;
-  color: #ffffff;
+  background: linear-gradient(90.21deg, rgba(64, 156, 213, 0.5) -5.91%, rgba(195, 186, 237, 0.5) 111.58%);
+  border-radius: rounded-full;
+  color: #02425a;
 }
 .btn-primary1{
   margin: 1px 10px;
@@ -694,3 +708,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 18px;
   color: rgb(97, 102, 93);
 }
+
+
+.content .readmore{
+  margin: 0px;
+  margin-left: auto;
+  margin-bottom: 2px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #368baa;;
+}
+.content .arrow{
+  background: linear-gradient(90.21deg, rgba(64, 156, 213, 0.5) -5.91%, rgba(195, 186, 237, 0.5) 111.58%);
+  border-radius: 50%;
+  color: #368baa;
+}
+
+
+
